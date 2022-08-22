@@ -14,7 +14,7 @@ import useApi from 'hooks/useApi';
 import { setItem } from 'lib/web';
 import { AUTH_TOKEN } from 'lib/constants';
 import { setUser } from 'store/app';
-import Logo from 'assets/logo.svg';
+import TLogo from 'assets/logo.svg';
 import styles from './LoginForm.module.css';
 
 const validate = ({ username, password }) => {
@@ -76,7 +76,7 @@ export default function LoginForm() {
         {() => (
           <Form>
             <div className={styles.header}>
-              <Icon icon={<Logo />} size="xlarge" className={styles.icon} />
+              <Icon icon={<TLogo />} size="xlarge" className={styles.icon} />
               <h1 className="center">BlogSpot</h1>
             </div>
             <FormRow>
